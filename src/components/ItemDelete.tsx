@@ -28,7 +28,7 @@ function ItemDelete() {
             color: "white",
             border: "none",
             borderRadius: "4px",
-            cursor: "pointer"
+            cursor: "pointer",
           }}
         >
           削除する
@@ -41,7 +41,7 @@ function ItemDelete() {
             color: "white",
             border: "none",
             borderRadius: "4px",
-            cursor: "pointer"
+            cursor: "pointer",
           }}
         >
           キャンセル

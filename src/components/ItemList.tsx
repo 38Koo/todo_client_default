@@ -38,9 +38,7 @@ export const ItemList = () => {
                 marginBottom: "8px",
                 backgroundColor: "#f8f9fa",
                 borderRadius: "8px",
-                borderLeft: item.isCompleted
-                  ? "4px solid #28a745"
-                  : "4px solid #007bff",
+                borderLeft: item.isCompleted ? "4px solid #28a745" : "4px solid #007bff",
               }}
             >
               <Link

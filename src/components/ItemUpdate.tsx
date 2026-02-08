@@ -31,7 +31,7 @@ function ItemUpdate() {
               width: "100%",
               padding: "8px",
               borderRadius: "4px",
-              border: "1px solid #ccc"
+              border: "1px solid #ccc",
             }}
           />
         </div>
@@ -47,7 +47,7 @@ function ItemUpdate() {
               width: "100%",
               padding: "8px",
               borderRadius: "4px",
-              border: "1px solid #ccc"
+              border: "1px solid #ccc",
             }}
           >
             <option value="有効">有効</option>
@@ -64,7 +64,7 @@ function ItemUpdate() {
               color: "white",
               border: "none",
               borderRadius: "4px",
-              cursor: "pointer"
+              cursor: "pointer",
             }}
           >
             更新する
@@ -78,7 +78,7 @@ function ItemUpdate() {
               color: "white",
               border: "none",
               borderRadius: "4px",
-              cursor: "pointer"
+              cursor: "pointer",
             }}
           >
             キャンセル
