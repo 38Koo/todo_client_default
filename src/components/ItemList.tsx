@@ -24,7 +24,22 @@ export const ItemList = () => {
 
   return (
     <div style={{ maxWidth: "800px", margin: "0 auto", padding: "20px" }}>
-      <h1 style={{ marginBottom: "24px" }}>TODO一覧</h1>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "24px" }}>
+        <h1 style={{ margin: 0 }}>TODO一覧</h1>
+        <Link
+          to="/item/new"
+          style={{
+            padding: "10px 20px",
+            backgroundColor: "#007bff",
+            color: "white",
+            textDecoration: "none",
+            borderRadius: "4px",
+            fontWeight: "bold",
+          }}
+        >
+          新規作成
+        </Link>
+      </div>
 
       {data.items.length === 0 ? (
         <p>TODOアイテムはありません。</p>
