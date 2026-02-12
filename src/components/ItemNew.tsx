@@ -13,7 +13,7 @@ export const ItemNew = () => {
 
     try {
       const res = await fetch(
-        `${import.meta.env.VITE_API_BASE_URL}/api/items`,
+        `${import.meta.env.VITE_API_BASE_URL}/api/items/new`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -38,7 +38,13 @@ export const ItemNew = () => {
 
       <form onSubmit={handleSubmit}>
         <div style={{ marginBottom: "15px" }}>
-          <label style={{ display: "block", marginBottom: "5px", fontWeight: "bold" }}>
+          <label
+            style={{
+              display: "block",
+              marginBottom: "5px",
+              fontWeight: "bold",
+            }}
+          >
             タイトル
           </label>
           <input
@@ -57,7 +63,13 @@ export const ItemNew = () => {
         </div>
 
         <div style={{ marginBottom: "15px" }}>
-          <label style={{ display: "block", marginBottom: "5px", fontWeight: "bold" }}>
+          <label
+            style={{
+              display: "block",
+              marginBottom: "5px",
+              fontWeight: "bold",
+            }}
+          >
             内容
           </label>
           <textarea
