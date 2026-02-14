@@ -4,10 +4,29 @@ function ItemDelete() {
   const { id } = useParams();
   const navigate = useNavigate();
 
-  const handleDelete = () => {
+  const handleDelete = async () => {
     if (confirm(`ID: ${id} のアイテムを削除しますか？`)) {
-      alert("削除しました");
-      navigate("/");
+      try {
+        const res = await fetch(
+          `${import.meta.env.VITE_API_BASE_URL}/api/items/${id}`,
+          {
+            method: "DELETE",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          },
+        );
+
+        if (!res.ok) {
+          throw new Error(`Failed to delete item with ID: ${id}`);
+        }
+
+        alert("削除しました");
+        navigate("/");
+      } catch (error) {
+        console.error("Error deleting item:", error);
+        alert("削除に失敗しました");
+      }
     }
   };
 

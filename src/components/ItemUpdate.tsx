@@ -6,7 +6,7 @@ function ItemUpdate() {
   const navigate = useNavigate();
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
-  const [isCompleted, setIsCompleted] = useState("完了");
+  const [isCompleted, setIsCompleted] = useState("未完了");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
